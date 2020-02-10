@@ -105,3 +105,58 @@
     90% {transform: rotate(270deg);}
     100% {transform: rotate(0deg);}
 }
+
+.ex-12-top-white {
+    animation-name: gira-top-12;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 999999;
+}
+
+@keyframes gira-top-12 {
+    from {transform: translateX(0%);}
+    to {transform: translateX(100%);}
+}
+
+.ex-12-bottom-white {
+    animation-name: gira-bottom-12;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 999999;
+
+}
+
+@keyframes gira-bottom-12 {
+    from {transform: translateX(0%);}
+    to {transform: translateX(-100%);}
+}
+
+.ex-13-top-white {
+    animation-name: gira-top-13;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 999999;
+}
+
+@keyframes gira-top-13 {
+    0% {transform: translateX(0%);}
+    25% {transform: translateX(200%);}
+    40% {transform: translate(300%,100%);}
+    50% {transform: translate(200%,200%);}
+    100% {transform: translate(200%,300%);}
+}
+
+.ex-13-bottom-white {
+    animation-name: gira-bottom-13;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 999999;
+}
+
+@keyframes gira-bottom-13 {
+    0% {transform: translateX(0%);}
+    25% {transform: translateX(-200%);}
+    40% {transform: translate(-200%,-100%);}
+    50% {transform: translate(-200%,-200%);}
+    100% {transform: translate(-200%,-300%);}
+}
