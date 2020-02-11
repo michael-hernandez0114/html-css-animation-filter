@@ -31,17 +31,15 @@
 }
 
 .ex-5-square {
-    transition: width 2s ease-in-out,height 2s ease-in-out;
+    transition: 2.5s;
 }
 
 .ex-5-square:hover {
-    width: 100px;
-    height: 100px;
+    transform: scale(1.5);
 }
 
 .ex-5-square:active {
-    width: 25px;
-    height: 25px;
+    transform: scale(0.5);
 }
 
 .ex-6-img {
@@ -106,29 +104,31 @@
     100% {transform: rotate(0deg);}
 }
 
-.ex-12-top-white {
+.ex-12-button:hover .ex-12-top-white {
     animation-name: gira-top-12;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 999999;
 }
 
 @keyframes gira-top-12 {
-    from {transform: translateX(0%);}
-    to {transform: translateX(100%);}
+    0% {left:10%;}
+    50% {left: calc(100% - 60px);}
+    100% {left: 10%;}
 }
 
-.ex-12-bottom-white {
+.ex-12-button:hover .ex-12-bottom-white {
     animation-name: gira-bottom-12;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 999999;
 
 }
 
 @keyframes gira-bottom-12 {
-    from {transform: translateX(0%);}
-    to {transform: translateX(-100%);}
+    0% {right:20%;}
+    50% {right: calc(100% - 60px);}
+    100% {right: 20%;}
 }
 
 .ex-13-top-white {
